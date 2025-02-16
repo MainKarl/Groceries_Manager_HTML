@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Debug",
+      "configurations": ["Local", "docker-debug"],
+      "stopAll": true
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Client",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "docker-debug",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "address": "localhost",
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "/app",
+      "protocol": "inspector",
+      "presentation": {
+        "hidden": true
+      }
+    }
+  ]
+}
