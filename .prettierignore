@@ -1,0 +1,7 @@
+/nodes_modules
+/.pnp
+.pnp.js
+
+/.next
+/build
+/coverage
