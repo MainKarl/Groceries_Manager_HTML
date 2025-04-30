@@ -9,7 +9,9 @@
     "format": "npx prettier --write ."
   },
   "dependencies": {
-    "next": "15.1.7",
+    "@stitches/react": "^1.2.8",
+    "next": "^15.3.1",
+    "nookies": "^2.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5"
